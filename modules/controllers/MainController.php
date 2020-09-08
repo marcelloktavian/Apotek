@@ -1,31 +1,20 @@
-<?php 
+<?php
+
 namespace modules\controllers;
 use \Controller;
 
 class MainController extends Controller {
 
+    protected $login;
 
-	protected function template($viewName, $data = array()) {
+    public function __construct() {
 
-        // $this->model('artikel');
+        $this->login = isset($_SESSION["login"]) ? $_SESSION["login"] : '';
 
-        // $artikel = $this->artikel->get(
-        //     array(
-        //         'limit' => '0,5'
-        //     )
-        // );
-
-
-        // $this->model("kategori");
-
-        // $kategori = $this->kategori->get(
-        //     array(
-        //         'limit' => '0,5'
-        //     )
-        // );
-
-
-        // $view = $this->view('home');
-     
-	}
+        if($this->login=='') {
+            $this->redirect(SITE_URL . "?page=login");
+        }
+    }
+    
 }
+?>
