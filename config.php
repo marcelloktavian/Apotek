@@ -2,7 +2,7 @@
     $page = (isset($_GET['page']) && $_GET['page']) ? $_GET['page'] : '';
 
     // ini konfigurasi untuk websitenya
-    define('PATH','http://localhost:8080/Apotek/'); // isi dari path websitenya
+    define('PATH','http://localhost:8080/oop/'); // isi dari path websitenya
     define('SITE_URL',PATH.'index.php');
     define('POSITION_URL',PATH.'?page='.$page);
 

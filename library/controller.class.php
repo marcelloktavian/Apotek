@@ -5,8 +5,8 @@ class Controller{
         return $view;
     }
 
-    protected function model($modelName){
-        require_once ROOT.DS.'modules'.DS.'models'.DS.$modelName.'Model.php';
+    protected function model($modelName, $fileName){
+        require_once ROOT.DS.'modules'.DS.$fileName.DS.'models'.DS.$modelName.'Model.php';
         $className=ucfirst($modelName).'Model';
         $this->$modelName = new $className();
     }

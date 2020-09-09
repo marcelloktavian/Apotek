@@ -7,8 +7,8 @@
             $this->db = new Database();
         }
 
-        public function model($modelName){
-            require_once ROOT.DS.'modules'.DS.'models'.DS.$modelName.'Model.php';
+        public function model($modelName,$file){
+            require_once ROOT.DS.'modules'.DS.$file.DS.'models'.DS.$modelName.'Model.php';
             $className = ucfirst($modelName).'Model';
             $this->$modelName = new $className();
         }

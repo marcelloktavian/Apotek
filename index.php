@@ -25,7 +25,9 @@ function __autoload($className) {
 
 //now let begin for make it MVC
 $page = (isset($_GET['page']) && $_GET['page']) ? $_GET['page'] : 'home';
-$controller = ROOT . DS . 'modules' . DS . 'controllers' . DS . $page .'Controller.php';
+$file = (isset($_GET['file']) && $_GET['file']) ? $_GET['file'] : 'testlogin';
+
+$controller = ROOT . DS . 'modules' . DS . $file . DS . 'controllers' . DS . $page .'Controller.php';
 
 if(file_exists($controller)) {
 
