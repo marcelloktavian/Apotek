@@ -19,13 +19,11 @@ class LoginController extends Controller {
 			$username = isset($_POST["username"]) ? $_POST["username"] : '';
 			$password = isset($_POST["password"]) ? $_POST["password"] : '';
 
-			//ambil nama tabel
+			
 			$this->model('user');
+			$model = new UserModel();
 
-			$user = $this->user->getWhere(array(
-				'nama' => $username,
-				'pass' => $password,
-			));
+			$user = $model->get_data($username, $password);
 
 			if(count($user) > 0) {
 				//berhasil masuk
