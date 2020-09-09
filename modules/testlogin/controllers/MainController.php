@@ -12,7 +12,7 @@ class MainController extends Controller {
         $this->login = isset($_SESSION["login"]) ? $_SESSION["login"] : '';
 
         if($this->login=='') {
-            $this->redirect(SITE_URL . "?file=testlogin&&page=login");
+            $this->redirect(SITE_URL . "?page=login");
         }
     }
     

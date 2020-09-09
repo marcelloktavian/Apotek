@@ -2,7 +2,6 @@
 class View {
 
 	public $viewName = NULL;
-	public $file = 'testlogin';
 	public $data = array();
 	public $isRender =  FALSE;
 
@@ -22,7 +21,12 @@ class View {
 	public function forceRender(){
 		$this->isRender = TRUE;
 		extract($this->data);
-		$view = ROOT . DS . 'modules' . DS . $this->file . DS . 'views' . DS . $this->viewName . '.view.php';
+		$fileEx = explode('/',$this->viewName);
+		$file = $fileEx[0];
+		$name = $fileEx[1];
+
+		$view = ROOT . DS . 'modules' . DS . $file . DS . 'views' . DS . $name . '.view.php';
+		// echo $view;die;
 		if(file_exists($view)) require_once $view;
 		else echo('View Not Found !');
 	}

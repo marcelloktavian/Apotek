@@ -21,7 +21,7 @@ var myBarChart = new Chart(barChart, {
 	data: {
 		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
 		datasets : [{
-			label: "Sales",
+			label: "Pasien",
 			backgroundColor: 'rgb(23, 125, 255)',
 			borderColor: 'rgb(23, 125, 255)',
 			data: [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4],

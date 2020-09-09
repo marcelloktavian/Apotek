@@ -33,7 +33,7 @@ class LoginController extends Controller {
 				$this->redirect('index.php');
 			}
 		}
-		$view = $this->view('login')->bind('masuk', $masuk);
+		$view = $this->view('testlogin/login')->bind('masuk', $masuk);
 	}
 
 	public function logout() {

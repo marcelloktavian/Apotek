@@ -24,8 +24,14 @@ function __autoload($className) {
 }
 
 //now let begin for make it MVC
-$page = (isset($_GET['page']) && $_GET['page']) ? $_GET['page'] : 'home';
-$file = (isset($_GET['file']) && $_GET['file']) ? $_GET['file'] : 'testlogin';
+$getParams = $_GET['page'];
+$paramsExplode = explode('/',$getParams);
+$file = $paramsExplode[0];
+$control = $paramsExplode[1];
+
+// var_dump($file,$control);die;
+
+$page = (isset($_GET['page']) && $_GET['page']) ? $control : 'home';
 
 $controller = ROOT . DS . 'modules' . DS . $file . DS . 'controllers' . DS . $page .'Controller.php';
 
