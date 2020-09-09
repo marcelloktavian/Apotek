@@ -24,67 +24,128 @@
 				</span>
 				<h4 class="text-section">Menu</h4>
 			</li>
-						<!-- <li class="nav-item">
-							<a data-toggle="collapse" href="#base">
-								<i class="fas fa-layer-group"></i>
-								<p>Base</p>
-								<span class="caret"></span>
+
+			<!-- Menu Master -->
+			<li class="nav-item">
+				<a data-toggle="collapse" href="#master">
+					<i class="fas fa-layer-group"></i>
+					<p>Master Data</p>
+					<span class="caret"></span>
+				</a>
+				<div class="collapse" id="master">
+					<ul class="nav nav-collapse">
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=master&&page=satuan">
+								<span class="sub-item">Data Satuan</span>
 							</a>
-							<div class="collapse" id="base">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="components/avatars.html">
-											<span class="sub-item">Avatars</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/buttons.html">
-											<span class="sub-item">Buttons</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/gridsystem.html">
-											<span class="sub-item">Grid System</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/panels.html">
-											<span class="sub-item">Panels</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/notifications.html">
-											<span class="sub-item">Notifications</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/sweetalert.html">
-											<span class="sub-item">Sweet Alert</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/font-awesome-icons.html">
-											<span class="sub-item">Font Awesome Icons</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/simple-line-icons.html">
-											<span class="sub-item">Simple Line Icons</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/flaticons.html">
-											<span class="sub-item">Flaticons</span>
-										</a>
-									</li>
-									<li>
-										<a href="components/typography.html">
-											<span class="sub-item">Typography</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</li> -->
+						</li>
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=master&&page=jenisobat">
+								<span class="sub-item">Data Jenis Obat</span>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=master&&page=obat">
+								<span class="sub-item">Data Obat</span>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=master&&page=penyakit">
+								<span class="sub-item">Data Penyakit</span>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=master&&page=dokter">
+								<span class="sub-item">Data Dokter</span>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=master&&page=pelanggan">
+								<span class="sub-item">Data Pelanggan</span>
+							</a>
+						</li>
 					</ul>
 				</div>
-			</div>
+			</li>
+
+			<!-- Menu Penjualan -->
+			<li class="nav-item">
+				<a data-toggle="collapse" href="#transaksi">
+					<i class="fas fa-layer-group"></i>
+					<p>Transaksi</p>
+					<span class="caret"></span>
+				</a>
+				<div class="collapse" id="transaksi">
+					<ul class="nav nav-collapse">
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=transaksi&&page=penjualan">
+								<span class="sub-item">Penjualan Obat</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<!-- Menu Laporan -->
+			<li class="nav-item">
+				<a data-toggle="collapse" href="#laporan">
+					<i class="fas fa-layer-group"></i>
+					<p>Laporan</p>
+					<span class="caret"></span>
+				</a>
+				<div class="collapse" id="laporan">
+					<ul class="nav nav-collapse">
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=laporan&&page=stok">
+								<span class="sub-item">Laporan Stok Gudang</span>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=laporan&&page=obatkeluar">
+								<span class="sub-item">Laporan Obat Keluar</span>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=laporan&&page=penjualanglobal">
+								<span class="sub-item">Laporan Penjualan Global</span>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=laporan&&page=rekammedis">
+								<span class="sub-item">Laporan Rekam Medis</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+
+			<!-- Menu Setting -->
+			<li class="nav-item">
+				<a data-toggle="collapse" href="#setting">
+					<i class="fas fa-layer-group"></i>
+					<p>Setting</p>
+					<span class="caret"></span>
+				</a>
+				<div class="collapse" id="setting">
+					<ul class="nav nav-collapse">
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=setting&&page=usergroup">
+								<span class="sub-item">User Group</span>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=setting&&page=groupakses">
+								<span class="sub-item">Group Akses</span>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo PATH; ?>index.php?file=setting&&page=pengguna">
+								<span class="sub-item">Data Pengguna</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
