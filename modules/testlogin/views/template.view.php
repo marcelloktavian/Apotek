@@ -48,6 +48,10 @@ $page = (isset($_GET['page']) && $_GET['page']) ? $_GET['page'] : '';
 	<!-- Bootstrap Notify -->
 	<script src="resources/assets/plugins/bootstrap-notify/bootstrap-notify.min.js"></script>
 
+	<!-- charts js -->
+	<script src="resources/assets/plugins/chart.js/chart.min.js"></script>
+	<script src="resources/assets/plugins/chart-circle/circles.min.js"></script>
+
 	<!-- JS -->
 	<script src="resources/assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
 	<script src="resources/assets/js/atlantis.min.js"></script>
